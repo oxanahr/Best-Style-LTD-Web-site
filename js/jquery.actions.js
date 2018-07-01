@@ -1,5 +1,11 @@
 $(function () {
 
+    //Button Portfolio
+    $(function(){
+        $("#includedContent").load("button-rotate.html");
+    });
+
+
     // Parallax
     $('.intro-section').parallax({
         imageSrc: 'img/bg-1.jpg',
@@ -11,10 +17,6 @@ $(function () {
     });
     $('.contact-section').parallax({
         imageSrc: 'img/3d-modeli.jpg',
-        speed: 0.2
-    });
-    $('.video-section').parallax({
-        imageSrc: 'img/siluets.jpg',
         speed: 0.2
     });
 
@@ -62,29 +64,17 @@ $(function () {
         $('.single-page-nav').removeClass('show');
     });
 
-    $(document).ready(function(){
-        $("#box").click(function(){
-            $("#box").animate({opacity: "0.1", left: "+=400"}, 1200)
-                .animate({opacity: "0.4", top: "+=160", height: "20%" , width: "20%"}, "slow")
-                .animate({opacity: "1", left: "0", height: "100%", width: "100%"}, "slow")
-                .animate({top: "0"}, "fast")
-                .slideUp()
-                .slideDown("slow")
-            return false;
-        });
+
+    $("#box").click(function () {
+        $("#box").animate({opacity: "0.1", left: "+=400"}, 1200)
+            .animate({opacity: "0.4", top: "+=160", height: "20%", width: "20%"}, "slow")
+            .animate({opacity: "1", left: "0", height: "100%", width: "100%"}, "slow")
+            .animate({top: "0"}, "fast")
+            .slideUp()
+            .slideDown("slow").text('Изпратен') ;
+
+        return false;
+
     });
 
-    // $("#popup_video .popup__close, .popup").click(function(e) {
-    //     if(e.target == this) {
-    //         e.preventDefault();
-    //
-    //         $("#overlay").fadeOut(400, function(){
-    //             $("#popup_video")
-    //                 .find(".popup__video")
-    //                 .html('');
-    //         });
-    //
-    //         $("#popup_video").removeClass("show");
-    //     }
-    // });
 });
