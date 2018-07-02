@@ -5,7 +5,6 @@ $(function () {
         $("#includedContent").load("button-rotate.html");
     });
 
-
     // Parallax
     $('.intro-section').parallax({
         imageSrc: 'img/bg-1.jpg',
