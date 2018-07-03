@@ -82,8 +82,6 @@ ul#menu {
     margin-top: -234px;
 }
 
-.main-menu ul {
-}
 
 .main-menu ul li {
     display: inline-block;
@@ -137,11 +135,6 @@ ul#menu {
     line-height: 58px;
     background: rgba(255, 255, 255, 0);
 }
-
-/*iframe#player {*/
-/*display: block;*/
-/*margin: auto;*/
-/*}*/
 
 .btn {
     display: inline-block;
@@ -839,5 +832,8 @@ input {
     header {
         height: 50vh;
     }
+}
+#footer-area-p {
+    color: #1a1a1a;
 }
 
